@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Me</title>
+  <link rel="shortcut icon" href="img/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"  type="text/css" href="css/style.production.css">
+</head>
+
+<body>
+  <header class="page-header">
+
+    <!-- Add my logo here -->
+
+    <img src="img/logo.png" class="page-header__item" alt="logo" >
+    <nav class="main-navigation page-header__item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="contact">
+
+    <h1>Contact</h1>
+
+    <p>
+      Ricky Saull <br>
+      1234 Main St <br>
+      Somewhere, NJ 12345 <br>
+      <br>
+      Tel <a href="tel:+11234567890">Tel +1 123-456-7890</a> <br>
+      Skype <a href="skype:live:ricky_10">live:ricky_10</a> <br>
+      <a href="mailto:email@gmail.com">email@gmail.com</a> <br>
+      <br>
+      <a href="mailto:email@gmail.com">Contact me</a>
+    </p>
+
+    <!-- Contact Form -->
+
+    <p>*Indicates required field</p>
+    <form action="#" method="post" id="contact-form">
+      <!-- FName Field -->
+      <label for="contact-fname" class="standard-label">*First Name: </label> <br>
+      <input type="text" id="contact-fname" required> <br>
+
+      <!-- LName Field -->
+      <label for="contact-lname" class="standard-label">*Last Name: </label> <br>
+      <input type="text" id="contact-lname" required> <br>
+
+      <!-- E-mail Field -->
+      <label class="standard-label" for="contact-email">*E-mail: </label> <br>
+      <input type="email" id="contact-email" required> <br>
+
+      <!-- Telelphone Field -->
+      <label class="standard-label" for="contact-tel">Telephone: </label> <br>
+      <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" value="###-###-####" id="contact-tel"> <br>
+
+      <!-- Message Field -->
+      <label class="standard-label" for="contact-msg">*Message: </label> <br>
+      <textarea maxlength="240" id="contact-msg" required></textarea> <br>
+      <input type="submit" value="Send message">
+    </form>
+  </div>
+
+  <footer class="page-footer">
+    <p>Find me on</p>
+    <div class="social-media">
+      <!-- Github Icon -->
+
+      <a href="https://github.com/rmscode" target="_blank" rel="noopener noreferrer"><img src="img/github.svg" alt="Github icon that links to my Github page"></a>
+
+      <!-- Twitter Icon -->
+
+      <a href="https://twitter.com/RickySaull" target="_blank" rel="noopener noreferrer"><img src="img/twitter.svg" alt="Twitter icon that links to my twitter page"></a>
+
+      <!-- LinkedIn Icon -->
+
+      <a href="https://www.linkedin.com/in/rickysaull/" target="_blank" rel="noopener noreferrer"><img src="img/linkedin.svg" alt="LinkedIn icon that links to my LinkedIn page"></a>
+    </div>
+  </footer>
+
+<script src="js/tota11y.min.js"></script>
+</body>
+
+</html>
