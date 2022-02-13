@@ -131,6 +131,11 @@ button:focus,
   margin: 0 auto;
 }
 
+.city-hall-svg {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 .contact {
   max-width: 700px;
   margin: 0 auto;
@@ -216,18 +221,7 @@ button:focus,
   }
 }
 
-@-webkit-keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-  50% {
-    fill: #fcffad;
-  }
-  100% {
-    fill: #f76414;
-  }
-}
-
+/* [START] UNCOMMENT WHEN NEW SVG IS ADDED
 @keyframes color-change {
   0% {
     fill: #edc655;
@@ -241,60 +235,33 @@ button:focus,
 }
 
 .sun {
-  -webkit-animation: 4s color-change infinite alternate linear;
-          animation: 4s color-change infinite alternate linear;
-}
-
-@-webkit-keyframes cloud-move {
-  from {
-    -webkit-transform: translateX(0px ,50px);
-            transform: translateX(0px ,50px);
-  }
-  to {
-    -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
-  }
+  animation: 4s color-change infinite alternate linear;
 }
 
 @keyframes cloud-move {
   from {
-    -webkit-transform: translateX(0px ,50px);
-            transform: translateX(0px ,50px);
+    transform: translateX(0px ,50px);
   }
   to {
-    -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
 .cloud-front {
-  -webkit-animation: 30s cloud-move infinite alternate linear;
-          animation: 30s cloud-move infinite alternate linear;
-}
-
-@-webkit-keyframes cloud-move-reverse {
-  from {
-    -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
-  }
-  to {
-    -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
-  }
+  animation: 30s cloud-move infinite alternate linear;
 }
 
 @keyframes cloud-move-reverse {
   from {
-    -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
   }
   to {
-    -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
   }
 }
 
 .cloud-back {
-  -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-          animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
+[END] */
